@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logiska Sifferkryss för Press & Media</title>
+    <style>
+        /* Modern, ren och lite "matematisk" design */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9fbfd;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .usp-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .usp-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid #eee;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Felfria Sifferpussel. Garanterat.</h1>
+        <p>Tryckfärdiga logikkryss (Sudoku, Binero, Camping m.fl.) för dagstidningar och magasin, utan gissningar eller dubbla lösningar.</p>
+    </header>
+
+    <div class="container">
+        
+        <h2>Varför byta pusselleverantör?</h2>
+        <p>Många tidningar publicerar idag pussel med tvetydig logik, förskjutna rader och felaktiga facit. Jag löser det genom att generera och validera varje pussel med strikt kodlogik (Z3 Theorem Prover och Backtracking). Om ett pussel har fler än en lösning, kasseras det automatiskt.</p>
+
+        <div class="usp-grid">
+            <div class="usp-card">
+                <h3>100% Unika Lösningar</h3>
+                <p>Varje pussel verifieras matematiskt. Inga dubbletter, inga gissningar – bara ren logik. Detta minimerar frustrerade samtal från era läsare.</p>
+            </div>
+            <div class="usp-card">
+                <h3>Tryckfärdig Layout</h3>
+                <p>Inga förskjutna sifferrader. PDF:erna ritas upp direkt från algoritmen som knivskarp vektorgrafik. Perfekt för tryckpressen, oavsett format.</p>
+            </div>
+            <div class="usp-card">
+                <h3>Varierat Utbud</h3>
+                <p>Leverans av en färdig helsida per vecka med en mix av Sudoku, Binero, Camping (Tents), Hitori och Kakuro. Skräddarsytt för er redaktion.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Vill ni se ett smakprov?</h2>
+            <p>Kontakta mig för ett kostnadsfritt, tryckfärdigt exempel på hur en pusselsida kan se ut i er tidning.</p>
+            <!-- Ersätt med din e-post när du är redo -->
+            <a href="mailto:din-email@gmail.com" class="button">Kontakta Mig</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Albin Westlin. Alla pussel genereras med Open Source-verktyg och egenutvecklade valideringsskript.</p>
+    </footer>
+
+</body>
+</html>
