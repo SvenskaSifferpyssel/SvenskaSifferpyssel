@@ -49,11 +49,18 @@
             padding: 3rem 2rem;
         }
 
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Styling för USP-sektionen */
         .usp-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+            margin-bottom: 4rem;
         }
 
         .usp-card {
@@ -69,6 +76,42 @@
             color: var(--primary-color);
         }
 
+        /* Styling för Pussel-sektionen */
+        .puzzle-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+            margin-bottom: 3rem;
+        }
+
+        .puzzle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .puzzle-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .puzzle-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .puzzle-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Styling för Call to Action */
         .cta-section {
             text-align: center;
             margin-top: 4rem;
@@ -85,6 +128,7 @@
             border-radius: 4px;
             font-weight: bold;
             transition: background 0.3s ease;
+            margin-top: 1rem;
         }
 
         .button:hover {
@@ -103,33 +147,61 @@
 
     <header>
         <h1>Felfria Sifferpussel. Garanterat.</h1>
-        <p>Tryckfärdiga logikkryss (Sudoku, Binero, Camping m.fl.) för dagstidningar och magasin, utan gissningar eller dubbla lösningar.</p>
+        <p>Tryckfärdiga logikkryss (Sudoku, Binero, Camping m.fl.) för dagstidningar och magasin – skapade med kompromisslös precision och unika lösningar.</p>
     </header>
 
     <div class="container">
         
-        <h2>Varför byta pusselleverantör?</h2>
-        <p>Många tidningar publicerar idag pussel med tvetydig logik, förskjutna rader och felaktiga facit. Jag löser det genom att generera och validera varje pussel med strikt kodlogik (Z3 Theorem Prover och Backtracking). Om ett pussel har fler än en lösning, kasseras det automatiskt.</p>
+        <h2>En modern standard för tidningens pusselsida</h2>
+        <p>Att erbjuda engagerande och utmanande pussel är ett uppskattat inslag för läsarna. Men för att upplevelsen ska hålla högsta klass krävs att materialet är helt korrekt. Traditioner och standardlösningar inom pusselsyndikering dras ibland med brister som förskjutna matriser, felaktiga facit eller pussel som i stället för ren logik kräver gissningar på grund av dubbla lösningar.</p>
+        <p>Jag har valt att lösa detta från grunden genom att kombinera avancerad programmering och strikt algoritmisk validering (med bland annat Backtracking och Z3 Theorem Prover). Resultatet är en pusseltjänst där varje enskilt publicerat kryss är matematiskt bevisat att hålla absolut toppklass.</p>
 
         <div class="usp-grid">
             <div class="usp-card">
                 <h3>100% Unika Lösningar</h3>
-                <p>Varje pussel verifieras matematiskt. Inga dubbletter, inga gissningar – bara ren logik. Detta minimerar frustrerade samtal från era läsare.</p>
+                <p>Varje pussel verifieras i förväg så att det alltid finns exakt en logisk väg till målet. Inga dubbla lösningar, inga gissningar – bara ren logik som skonar era läsare från frustration.</p>
             </div>
             <div class="usp-card">
                 <h3>Tryckfärdig Layout</h3>
-                <p>Inga förskjutna sifferrader. PDF:erna ritas upp direkt från algoritmen som knivskarp vektorgrafik. Perfekt för tryckpressen, oavsett format.</p>
+                <p>Inga felaktiga radhöjder eller förskjutna sifferrader. Materialet levereras som knivskarp vektorgrafik (PDF/EPS) anpassad direkt för tryckpressens krav, oavsett format.</p>
             </div>
             <div class="usp-card">
                 <h3>Varierat Utbud</h3>
-                <p>Leverans av en färdig helsida per vecka med en mix av Sudoku, Binero, Camping (Tents), Hitori och Kakuro. Skräddarsytt för er redaktion.</p>
+                <p>En komplett helsida per vecka med en genomtänkt mix av populära siffer- och logikpussel, skräddarsytt för er redaktion.</p>
+            </div>
+        </div>
+
+        <div class="puzzle-section">
+            <h2>Våra Pusseltyper</h2>
+            <p>Vi levererar ett varierat och balanserat utbud som passar alla typer av läsare. Här är ett urval av de pussel vi genererar.</p>
+            
+            <div class="puzzle-grid">
+                <div class="puzzle-card">
+                    <h3>Sudoku</h3>
+                    <p>Det klassiska 9x9-pusslet. En perfekt balans mellan tillgänglighet och djup logik som uppskattas av den breda massan.</p>
+                </div>
+                <div class="puzzle-card">
+                    <h3>Binero (Takuzu)</h3>
+                    <p>Ett elegant logikpussel med nollor och ettor som bygger på strikta symmetri- och maxgränsregler.</p>
+                </div>
+                <div class="puzzle-card">
+                    <h3>Camping (Tents)</h3>
+                    <p>Placera ut tält bredvid träden i ett naturnära rutnät, utan att de krockar med varandra. Lätt att lära, svårt att bemästra.</p>
+                </div>
+                <div class="puzzle-card">
+                    <h3>Hitori</h3>
+                    <p>Stryk över dubbletter och bind samman spelplanen genom ren uteslutningsmetod.</p>
+                </div>
+                <div class="puzzle-card">
+                    <h3>Kakuro</h3>
+                    <p>Matematisk korsordslogik där vågräta och lodräta sifferblock ska summera till exakt de förutbestämda talen.</p>
+                </div>
             </div>
         </div>
 
         <div class="cta-section">
             <h2>Vill ni se ett smakprov?</h2>
-            <p>Kontakta mig för ett kostnadsfritt, tryckfärdigt exempel på hur en pusselsida kan se ut i er tidning.</p>
-            <!-- Ersätt med din e-post när du är redo -->
+            <p>Kontakta mig för ett kostnadsfritt, tryckfärdigt exempel på hur en modern och helt felfri pusselsida skulle kunna se ut i er tidning.</p>
             <a href="mailto:din-email@gmail.com" class="button">Kontakta Mig</a>
         </div>
 
