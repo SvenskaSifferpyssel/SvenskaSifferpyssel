@@ -87,8 +87,8 @@
 
         .category-title {
             color: var(--accent-color);
-            margin-top: 3rem;
-            margin-bottom: 1rem;
+            margin-top: 3.5rem;
+            margin-bottom: 0.5rem;
             font-size: 1.5rem;
             border-bottom: 2px solid #eee;
             padding-bottom: 0.5rem;
@@ -97,12 +97,19 @@
         .category-title:first-of-type {
             margin-top: 1.5rem;
         }
+        
+        .category-desc {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
 
         .pyssel-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
-            margin-top: 1.5rem;
         }
 
         .pyssel-card {
@@ -159,14 +166,14 @@
 <body>
 
     <header>
-        <h1>Felfria Sifferpyssel</h1>
+        <h1>Felfria Sifferpyssel. Garanterat.</h1>
         <p>Tryckfärdiga logikkryss och sifferpyssel för dagstidningar och magasin – skapade med kompromisslös precision och unika lösningar.</p>
     </header>
 
     <div class="container">
         
         <h2>En modern standard för tidningens pysselsida</h2>
-        <p>Att erbjuda engagerande och utmanande pyssel är ett uppskattat inslag för läsarna. Men för att upplevelsen ska hålla högsta klass krävs att materialet är helt korrekt. Traditionella leverantörer har tyvärr ofta brister i sina logikkryss, så som förskjutna matriser, felaktiga facit eller pyssel som i stället för ren logik kräver gissningar på grund av dubbla lösningar.</p>
+        <p>Att erbjuda engagerande och utmanande pyssel är ett uppskattat inslag för läsarna. Men för att upplevelsen ska hålla högsta klass krävs att materialet är helt korrekt. Traditioner och standardlösningar inom pysselsyndikering dras ibland med brister som förskjutna matriser, felaktiga facit eller pyssel som i stället för ren logik kräver gissningar på grund av dubbla lösningar.</p>
         <p>Jag har valt att lösa detta från grunden genom att kombinera avancerad programmering och strikt algoritmisk validering. Resultatet är en pysseltjänst där varje enskilt publicerat kryss är matematiskt bevisat att hålla absolut toppklass.</p>
 
         <div class="usp-grid">
@@ -176,7 +183,7 @@
             </div>
             <div class="usp-card">
                 <h3>Tryckfärdig Layout</h3>
-                <p>Inga felaktiga radhöjder eller förskjutna sifferrader. Materialet levereras som knivskarp vektorgrafik anpassad direkt för tryckpressens krav, oavsett format.</p>
+                <p>Inga felaktiga radhöjder eller förskjutna sifferrader. Materialet levereras som knivskarp vektorgrafik (PDF/EPS) anpassad direkt för tryckpressens krav, oavsett format.</p>
             </div>
             <div class="usp-card">
                 <h3>Varierat Utbud</h3>
@@ -188,22 +195,19 @@
             <h2>Våra Pysseltyper</h2>
             <p>Vi levererar ett massivt och balanserat utbud som passar alla typer av läsare. Här är hela vår katalog av tryckfärdiga logikpyssel.</p>
             
-            <h3 class="category-title">Publikfavoriterna</h3>
+            <h3 class="category-title">Publikfavoriter & Självklara Klassiker</h3>
+            <p class="category-desc">Det grundutbud som varje tidning behöver. Bekanta, oerhört populära och perfekta för den breda massan.</p>
             <div class="pyssel-grid">
                 <div class="pyssel-card">
                     <h3>Sudoku</h3>
-                    <p>Det klassiska 9x9-pysslet. En perfekt balans mellan tillgänglighet och djup logik som uppskattas av den breda massan.</p>
+                    <p>Det klassiska 9x9-pysslet. En perfekt balans mellan tillgänglighet och djup logik som uppskattas av alla.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Binero (Takuzu)</h3>
+                    <h3>Binero</h3>
                     <p>Ett elegant logikpyssel med nollor och ettor som bygger på strikta symmetri- och maxgränsregler.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Camping (Tents)</h3>
-                    <p>Placera ut tält bredvid träden i ett naturnära rutnät, utan att de krockar med varandra. Lätt att lära, svårt att bemästra.</p>
-                </div>
-                <div class="pyssel-card">
-                    <h3>Nonogram (Picross)</h3>
+                    <h3>Nonogram</h3>
                     <p>Svärta rutor baserat på sifferledtrådar i marginalen för att till slut måla fram en pixelerad bild.</p>
                 </div>
                 <div class="pyssel-card">
@@ -212,58 +216,64 @@
                 </div>
             </div>
 
-            <h3 class="category-title">De japanska mästerverken</h3>
+            <h3 class="category-title">De Japanska Mästerverken</h3>
+            <p class="category-desc">Eleganta, minimalistiska och logiskt stringenta pyssel från Japan. Uppskattas enormt av inbitna lösare.</p>
             <div class="pyssel-grid">
                 <div class="pyssel-card">
-                    <h3>Slitherlink</h3>
+                    <h3>Surizarinku</h3>
                     <p>Dra horisontella och vertikala streck mellan punkter för att bilda exakt en obruten slinga enligt siffrornas ledtrådar.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Hashi (Brobygge)</h3>
-                    <p>Dra broar mellan öar. Siffran i varje ö anger exakt hur många broar som ansluter till den.</p>
+                    <h3>Hashiwokakero</h3>
+                    <p>Dra broar mellan öar. Siffran i varje ö anger exakt hur många broar som måste ansluta till den.</p>
                 </div>
                 <div class="pyssel-card">
                     <h3>Futoshiki</h3>
-                    <p>Fyll rutnätet med siffror (som i Sudoku), men du måste strikt följa de "större än"- och "mindre än"-tecken som satts ut.</p>
+                    <p>Fyll rutnätet med siffror, men du måste strikt följa de "större än"- och "mindre än"-tecken som satts ut.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Hitori</h3>
+                    <h3>Hitori ni shite kure</h3>
                     <p>Stryk över dubbletter och bind samman spelplanen genom ren uteslutningsmetod.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Shikaku</h3>
-                    <p>Dela in hela rutnätet i rektanglar. Varje rektangel ska omsluta exakt en siffra som anger hur många rutor ytan består av.</p>
+                    <h3>Shikaku ni kire</h3>
+                    <p>Dela in hela rutnätet i rektanglar. Varje rektangel ska omsluta exakt en siffra som anger ytan.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Akari (Light Up)</h3>
+                    <h3>Akari</h3>
                     <p>Placera ut glödlampor som lyser upp hela det vita rutnätet i raka linjer, utan att lamporna bländar varandra.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Kuromasu</h3>
-                    <p>Svärta rutor för att blockera sikten. En siffra anger exakt hur många vita rutor man "ser" från den positionen i rak linje.</p>
+                    <h3>Kuromasu wa doko da</h3>
+                    <p>Svärta rutor för att blockera sikten. En siffra anger exakt hur många vita rutor man "ser" i rak linje.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Masyu (Pearl)</h3>
+                    <h3>Mashu</h3>
                     <p>Dra en sammanhängande slinga som måste passera genom utplacerade pärlor, där pärlans färg dikterar hur slingan får svänga.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Galaxer (Tentai Show)</h3>
+                    <h3>Tentai Show</h3>
                     <p>Rita gränser runt utplacerade prickar så att varje bildat område blir exakt rotationssymmetriskt.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Slant</h3>
+                    <h3>Gokigen Naname</h3>
                     <p>Dra ett diagonalt streck i varje ruta. Siffrorna i hörnen anger exakt hur många streck som måste mötas i den punkten.</p>
                 </div>
             </div>
 
-            <h3 class="category-title">Modern logik & specialpyssel</h3>
+            <h3 class="category-title">Tematiska & Visuella Pyssel</h3>
+            <p class="category-desc">Utmaningar som bygger på igenkännliga teman och grafiska element. Ett roligt avbrott från rena siffermatriser.</p>
             <div class="pyssel-grid">
                 <div class="pyssel-card">
-                    <h3>Skyskrapor (Towers)</h3>
-                    <p>Fyll rutnätet med byggnader av olika höjd utifrån marginalens ledtrådar som avslöjar hur många tak man "ser" från det hållet.</p>
+                    <h3>Camping</h3>
+                    <p>Placera ut tält bredvid träden i ett naturnära rutnät, utan att de krockar med varandra. Lätt att lära, svårt att bemästra.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Tågräls (Tracks)</h3>
+                    <h3>Skyskrapor</h3>
+                    <p>Fyll rutnätet med byggnader av olika höjd utifrån marginalens ledtrådar som avslöjar hur många tak man "ser".</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Tågräls</h3>
                     <p>Fyll i rutnätet med rälsbitar för att bygga ett spår från start till mål enligt marginalernas utrymme.</p>
                 </div>
                 <div class="pyssel-card">
@@ -271,7 +281,7 @@
                     <p>Ett rutnät fyllt med siffror döljer en komplett uppsättning dominobrickor. Hitta hur de ligger placerade.</p>
                 </div>
                 <div class="pyssel-card">
-                    <h3>Vägvisaren (Signpost)</h3>
+                    <h3>Vägvisaren</h3>
                     <p>Dra en linje från ruta 1 till den sista. Varje ruta har en pil som pekar ut riktningen mot nästa steg i kedjan.</p>
                 </div>
                 <div class="pyssel-card">
