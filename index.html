@@ -76,8 +76,8 @@
             color: var(--primary-color);
         }
 
-        /* Styling för Pussel-sektionen */
-        .puzzle-section {
+        /* Styling för Pyssel-sektionen */
+        .pyssel-section {
             background: white;
             padding: 2.5rem;
             border-radius: 8px;
@@ -85,28 +85,41 @@
             margin-bottom: 3rem;
         }
 
-        .puzzle-grid {
+        .category-title {
+            color: var(--accent-color);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .category-title:first-of-type {
+            margin-top: 1.5rem;
+        }
+
+        .pyssel-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
 
-        .puzzle-card {
+        .pyssel-card {
             background: var(--bg-color);
             padding: 1.5rem;
             border-radius: 6px;
             border-left: 4px solid var(--primary-color);
         }
 
-        .puzzle-card h3 {
+        .pyssel-card h3 {
             margin-top: 0;
             margin-bottom: 0.5rem;
             color: var(--primary-color);
             font-size: 1.1rem;
         }
 
-        .puzzle-card p {
+        .pyssel-card p {
             margin: 0;
             font-size: 0.95rem;
         }
@@ -146,20 +159,20 @@
 <body>
 
     <header>
-        <h1>Felfria Sifferpussel. Garanterat.</h1>
-        <p>Tryckfärdiga logikkryss (Sudoku, Binero, Camping m.fl.) för dagstidningar och magasin – skapade med kompromisslös precision och unika lösningar.</p>
+        <h1>Felfria Sifferpyssel. Garanterat.</h1>
+        <p>Tryckfärdiga logikkryss och sifferpyssel för dagstidningar och magasin – skapade med kompromisslös precision och unika lösningar.</p>
     </header>
 
     <div class="container">
         
-        <h2>En modern standard för tidningens pusselsida</h2>
-        <p>Att erbjuda engagerande och utmanande pussel är ett uppskattat inslag för läsarna. Men för att upplevelsen ska hålla högsta klass krävs att materialet är helt korrekt. Traditioner och standardlösningar inom pusselsyndikering dras ibland med brister som förskjutna matriser, felaktiga facit eller pussel som i stället för ren logik kräver gissningar på grund av dubbla lösningar.</p>
-        <p>Jag har valt att lösa detta från grunden genom att kombinera avancerad programmering och strikt algoritmisk validering (med bland annat Backtracking och Z3 Theorem Prover). Resultatet är en pusseltjänst där varje enskilt publicerat kryss är matematiskt bevisat att hålla absolut toppklass.</p>
+        <h2>En modern standard för tidningens pysselsida</h2>
+        <p>Att erbjuda engagerande och utmanande pyssel är ett uppskattat inslag för läsarna. Men för att upplevelsen ska hålla högsta klass krävs att materialet är helt korrekt. Traditioner och standardlösningar inom pysselsyndikering dras ibland med brister som förskjutna matriser, felaktiga facit eller pyssel som i stället för ren logik kräver gissningar på grund av dubbla lösningar.</p>
+        <p>Jag har valt att lösa detta från grunden genom att kombinera avancerad programmering och strikt algoritmisk validering. Resultatet är en pysseltjänst där varje enskilt publicerat kryss är matematiskt bevisat att hålla absolut toppklass.</p>
 
         <div class="usp-grid">
             <div class="usp-card">
                 <h3>100% Unika Lösningar</h3>
-                <p>Varje pussel verifieras i förväg så att det alltid finns exakt en logisk väg till målet. Inga dubbla lösningar, inga gissningar – bara ren logik som skonar era läsare från frustration.</p>
+                <p>Varje pyssel verifieras i förväg så att det alltid finns exakt en logisk väg till målet. Inga dubbla lösningar, inga gissningar – bara ren logik som skonar era läsare från frustration.</p>
             </div>
             <div class="usp-card">
                 <h3>Tryckfärdig Layout</h3>
@@ -167,48 +180,125 @@
             </div>
             <div class="usp-card">
                 <h3>Varierat Utbud</h3>
-                <p>En komplett helsida per vecka med en genomtänkt mix av populära siffer- och logikpussel, skräddarsytt för er redaktion.</p>
+                <p>En komplett helsida per vecka med en genomtänkt mix av populära siffer- och logikpyssel, skräddarsytt för er redaktion.</p>
             </div>
         </div>
 
-        <div class="puzzle-section">
-            <h2>Våra Pusseltyper</h2>
-            <p>Vi levererar ett varierat och balanserat utbud som passar alla typer av läsare. Här är ett urval av de pussel vi genererar.</p>
+        <div class="pyssel-section">
+            <h2>Våra Pysseltyper</h2>
+            <p>Vi levererar ett massivt och balanserat utbud som passar alla typer av läsare. Här är hela vår katalog av tryckfärdiga logikpyssel.</p>
             
-            <div class="puzzle-grid">
-                <div class="puzzle-card">
+            <h3 class="category-title">Publikfavoriterna</h3>
+            <div class="pyssel-grid">
+                <div class="pyssel-card">
                     <h3>Sudoku</h3>
-                    <p>Det klassiska 9x9-pusslet. En perfekt balans mellan tillgänglighet och djup logik som uppskattas av den breda massan.</p>
+                    <p>Det klassiska 9x9-pysslet. En perfekt balans mellan tillgänglighet och djup logik som uppskattas av den breda massan.</p>
                 </div>
-                <div class="puzzle-card">
+                <div class="pyssel-card">
                     <h3>Binero (Takuzu)</h3>
-                    <p>Ett elegant logikpussel med nollor och ettor som bygger på strikta symmetri- och maxgränsregler.</p>
+                    <p>Ett elegant logikpyssel med nollor och ettor som bygger på strikta symmetri- och maxgränsregler.</p>
                 </div>
-                <div class="puzzle-card">
+                <div class="pyssel-card">
                     <h3>Camping (Tents)</h3>
                     <p>Placera ut tält bredvid träden i ett naturnära rutnät, utan att de krockar med varandra. Lätt att lära, svårt att bemästra.</p>
                 </div>
-                <div class="puzzle-card">
+                <div class="pyssel-card">
+                    <h3>Nonogram (Picross)</h3>
+                    <p>Svärta rutor baserat på sifferledtrådar i marginalen för att till slut måla fram en pixelerad bild.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Kakuro</h3>
+                    <p>Matematisk korsordslogik där vågräta och lodräta sifferblock ska summera till exakt de förutbestämda talen.</p>
+                </div>
+            </div>
+
+            <h3 class="category-title">De japanska mästerverken</h3>
+            <div class="pyssel-grid">
+                <div class="pyssel-card">
+                    <h3>Slitherlink</h3>
+                    <p>Dra horisontella och vertikala streck mellan punkter för att bilda exakt en obruten slinga enligt siffrornas ledtrådar.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Hashi (Brobygge)</h3>
+                    <p>Dra broar mellan öar. Siffran i varje ö anger exakt hur många broar som ansluter till den.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Futoshiki</h3>
+                    <p>Fyll rutnätet med siffror (som i Sudoku), men du måste strikt följa de "större än"- och "mindre än"-tecken som satts ut.</p>
+                </div>
+                <div class="pyssel-card">
                     <h3>Hitori</h3>
                     <p>Stryk över dubbletter och bind samman spelplanen genom ren uteslutningsmetod.</p>
                 </div>
-                <div class="puzzle-card">
-                    <h3>Kakuro</h3>
-                    <p>Matematisk korsordslogik där vågräta och lodräta sifferblock ska summera till exakt de förutbestämda talen.</p>
+                <div class="pyssel-card">
+                    <h3>Shikaku</h3>
+                    <p>Dela in hela rutnätet i rektanglar. Varje rektangel ska omsluta exakt en siffra som anger hur många rutor ytan består av.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Akari (Light Up)</h3>
+                    <p>Placera ut glödlampor som lyser upp hela det vita rutnätet i raka linjer, utan att lamporna bländar varandra.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Kuromasu</h3>
+                    <p>Svärta rutor för att blockera sikten. En siffra anger exakt hur många vita rutor man "ser" från den positionen i rak linje.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Masyu (Pearl)</h3>
+                    <p>Dra en sammanhängande slinga som måste passera genom utplacerade pärlor, där pärlans färg dikterar hur slingan får svänga.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Galaxer (Tentai Show)</h3>
+                    <p>Rita gränser runt utplacerade prickar så att varje bildat område blir exakt rotationssymmetriskt.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Slant</h3>
+                    <p>Dra ett diagonalt streck i varje ruta. Siffrorna i hörnen anger exakt hur många streck som måste mötas i den punkten.</p>
+                </div>
+            </div>
+
+            <h3 class="category-title">Modern logik & specialpyssel</h3>
+            <div class="pyssel-grid">
+                <div class="pyssel-card">
+                    <h3>Skyskrapor (Towers)</h3>
+                    <p>Fyll rutnätet med byggnader av olika höjd utifrån marginalens ledtrådar som avslöjar hur många tak man "ser" från det hållet.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Tågräls (Tracks)</h3>
+                    <p>Fyll i rutnätet med rälsbitar för att bygga ett spår från start till mål enligt marginalernas utrymme.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Dominopyssel</h3>
+                    <p>Ett rutnät fyllt med siffror döljer en komplett uppsättning dominobrickor. Hitta hur de ligger placerade.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Vägvisaren (Signpost)</h3>
+                    <p>Dra en linje från ruta 1 till den sista. Varje ruta har en pil som pekar ut riktningen mot nästa steg i kedjan.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Mosaik</h3>
+                    <p>En deterministisk Minröjare. Siffran anger exakt hur många av de omgivande nio rutorna som ska fyllas med färg.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Magneter</h3>
+                    <p>Placera ut magneter med en plus- och minuspol. Likadana poler får aldrig nudda varandra.</p>
+                </div>
+                <div class="pyssel-card">
+                    <h3>Monster i Spegelhuset</h3>
+                    <p>Placera ut osynliga väsen (vampyrer, spöken, zombies) så att exakt rätt antal syns när man tittar in genom speglarna.</p>
                 </div>
             </div>
         </div>
 
         <div class="cta-section">
             <h2>Vill ni se ett smakprov?</h2>
-            <p>Kontakta mig för ett kostnadsfritt, tryckfärdigt exempel på hur en modern och helt felfri pusselsida skulle kunna se ut i er tidning.</p>
+            <p>Kontakta mig för ett kostnadsfritt, tryckfärdigt exempel på hur en modern och helt felfri pysselsida skulle kunna se ut i er tidning.</p>
             <a href="mailto:din-email@gmail.com" class="button">Kontakta Mig</a>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Albin Westlin. Alla pussel genereras med Open Source-verktyg och egenutvecklade valideringsskript.</p>
+        <p>&copy; 2026 Albin Westlin. Alla pyssel genereras med Open Source-verktyg och egenutvecklade valideringsskript.</p>
     </footer>
 
 </body>
